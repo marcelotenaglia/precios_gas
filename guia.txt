@@ -1,0 +1,58 @@
+Análisis Exploratorio y Descriptivo:
+
+Visualización de la Serie Temporal:
+Crea un gráfico de líneas del precio del gas natural a lo largo del tiempo. Esto te permitirá identificar tendencias generales, patrones estacionales y cualquier pico o caída significativa.
+Utiliza Power BI para hacer este gráfico interactivo, permitiendo a los usuarios hacer zoom en períodos específicos.
+Análisis de Componentes de la Serie Temporal:
+Intenta descomponer la serie temporal en sus componentes: tendencia, estacionalidad y residuo. Esto puede ayudarte a entender mejor los patrones subyacentes. (Aunque esto se suele hacer con bibliotecas como statsmodels en Python, puedes visualizar los resultados en Power BI).
+Estadísticas Descriptivas:
+Calcula estadísticas como la media, mediana, desviación estándar, máximo y mínimo de los precios.
+Visualiza la distribución de los precios utilizando histogramas o gráficos de caja en Power BI.
+Identificación de Outliers:
+Busca puntos de datos que se desvíen significativamente del patrón general. Investiga las posibles causas de estos valores atípicos (eventos económicos, climáticos, etc.). Power BI tiene herramientas para identificar visualmente outliers.
+Análisis de Tendencias y Estacionalidad:
+
+Tendencia a Largo Plazo:
+¿Hay una tendencia general al alza o a la baja en los precios del gas natural a lo largo del período de tu dataset?
+Puedes usar promedios móviles en Power BI para suavizar la serie y visualizar la tendencia subyacente.
+Patrones Estacionales:
+¿Existen patrones que se repiten anualmente (por ejemplo, precios más altos en invierno debido a la demanda de calefacción)?
+Visualiza los precios promedio por mes del año para identificar la estacionalidad. Power BI te permite crear gráficos que agreguen datos por períodos específicos (mes, trimestre, etc.).
+Análisis de Ciclos:
+¿Hay ciclos económicos más amplios que afecten los precios del gas natural? Esto podría ser más difícil de identificar sin datos económicos adicionales.
+Análisis de Correlaciones y Factores Influyentes (requiere datasets adicionales):
+
+Correlación con el Petróleo:
+Investiga si existe una correlación entre los precios del gas natural y los precios del petróleo. Visualiza ambas series en el mismo gráfico en Power BI para comparar sus movimientos. Calcula el coeficiente de correlación con pandas si tienes ambos datasets.
+Impacto de la Temperatura:
+Si tienes datos de temperatura, analiza si existe una correlación entre las temperaturas (especialmente en invierno y verano) y los precios del gas natural. Crea gráficos de dispersión en Power BI para visualizar esta relación.
+Eventos Geopolíticos:
+Intenta identificar si eventos geopolíticos importantes (conflictos, cambios en políticas de producción, etc.) tuvieron un impacto notable en los precios. Puedes añadir anotaciones a tus gráficos en Power BI para marcar estos eventos.
+Indicadores Económicos:
+Explora la relación entre los precios del gas natural y otros indicadores económicos como el crecimiento del PIB, la producción industrial o la inflación (si tienes estos datos).
+Análisis Avanzado (podría requerir más conocimiento estadístico/econométrico):
+
+Modelado ARIMA o SARIMA:
+Si tienes suficientes datos, podrías intentar construir modelos de series de tiempo para pronosticar los precios futuros del gas natural. Esto generalmente se hace en Python con bibliotecas como statsmodels, y los resultados del pronóstico se podrían visualizar en Power BI.
+Análisis de Causalidad (Granger Causality):
+Si tienes múltiples series de tiempo relacionadas, podrías intentar determinar si una serie de tiempo precede y es útil para predecir otra (por ejemplo, si los precios del petróleo "causan" cambios en los precios del gas natural). Esto se realiza con pruebas estadísticas en Python.
+Visualizaciones en Power BI Específicas:
+
+Gráficos de Líneas Interactivos: Permiten a los usuarios seleccionar rangos de fechas, comparar diferentes períodos y ver tendencias detalladas.
+Gráficos de Área: Pueden ser útiles para visualizar la acumulación de precios o comparar diferentes segmentos a lo largo del tiempo.
+Gráficos de Dispersión: Ideales para explorar la relación entre dos variables (por ejemplo, precio vs. temperatura).
+Tarjetas y KPIs: Para mostrar métricas clave como el precio promedio, el cambio porcentual en un período, el máximo y el mínimo.
+Mapas (si tienes datos geográficos): Aunque los precios del gas natural son generalmente un valor único en un mercado, si tu dataset incluye información regional, podrías visualizar diferencias geográficas.
+Segmentadores de Datos (Slicers): Permiten a los usuarios filtrar los datos por diferentes períodos de tiempo u otras categorías si las tienes.
+Para empezar, te recomendaría:
+
+Entender tu dataset: ¿Qué período de tiempo cubre? ¿Cuál es la frecuencia de los datos (diaria, semanal, mensual)? ¿Qué columnas contiene además del precio?
+Comenzar con la visualización básica de la serie temporal en Power BI. Esto te dará una primera impresión de los datos.
+Explorar la estacionalidad comparando los precios por mes o por trimestre.
+Si tienes acceso a otros datasets relevantes (petróleo, temperatura, etc.), intenta combinarlos y analizar las correlaciones.
+¡Este es un campo muy rico para el análisis! ¿Hay alguna pregunta específica que te interese responder con estos datos? Saberlo podría ayudarme a darte ideas más enfocadas. ¡Mucha suerte con tu análisis!
+
+¿Qué insights principales has podido obtener de estos gráficos hasta ahora?
+¿Has notado alguna tendencia o patrón interesante?
+¿Hay alguna cuenca o segmento que te llame especialmente la atención?
+¿Te gustaría explorar alguna otra relación o aspecto de tus datos? Por ejemplo, ¿cómo se relaciona la condición (interrumpible/firme) con los precios en diferentes cuencas o segmentos?
